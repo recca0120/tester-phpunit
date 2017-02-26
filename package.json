@@ -1,0 +1,18 @@
+{
+  "name": "tester-mocha",
+  "main": "./lib/tester-mocha",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "tester:toggle"
+  },
+  "repository": "https://github.com/yacut/tester-mocha",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
