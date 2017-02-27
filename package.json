@@ -23,5 +23,10 @@
     "eslint": "^3.16.1",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0"
+  },
+  "apmInstallSource": {
+    "type": "git",
+    "source": "git@github.com:yacut/tester-mocha.git",
+    "sha": "41092a1b884c428fad4dd547ffa463102112ee48"
   }
 }
