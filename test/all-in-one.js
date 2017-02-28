@@ -91,8 +91,8 @@ describe('mocha runner', () => {
   describe('Handle console output deeper', () => {
     it('should delay test and pass', (done) => {
       console.info('test with delay');
-      assert.ok(true);
-      setTimeout(done, 1000);
+      assert.ok(true, true);
+      setTimeout(done, 5000);
     });
   });
 
