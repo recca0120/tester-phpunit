@@ -11,11 +11,15 @@
       "node": true,
       "mocha": true
     },
+    "parser": "babel-eslint",
     "rules": {
       "import/extensions": 0,
       "import/no-unresolved": 0,
       "import/no-extraneous-dependencies": 0,
       "import/prefer-default-export": 0,
-      "no-restricted-syntax": 0
+      "no-restricted-syntax": 0,
+      "class-methods-use-this": 0,
+      "consistent-return": 0,
+      "strict": 0
     }
 }
