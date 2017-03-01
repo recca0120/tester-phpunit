@@ -23,7 +23,7 @@ describe('mocha runner', () => {
 
   it('should return console log text and shows strings diff', () => {
     console.info('test#string');
-    assert.equal('stringA', 'stringA');
+    assert.equal('stringA', 'stringB');
   });
 
   it('should return console log text and shows date diff', () => {
