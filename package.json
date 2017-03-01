@@ -9,10 +9,26 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "configSchema": {
+    "scopes": {
+      "title": "List of scopes to run Mocha on.",
+      "type": "array",
+      "default": [
+        "test/*.js"
+      ],
+      "items": {
+        "type": "string"
+      }
+    }
+  },
   "dependencies": {
+    "atom-package-deps": "^4.4.1",
     "error-stack-parser": "^2.0.0",
     "mocha": "^3.2.0"
   },
+  "package-deps": [
+    "tester"
+  ],
   "providedServices": {
     "tester": {
       "versions": {
