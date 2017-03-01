@@ -7,3 +7,7 @@ Thae package is in development
 
 > Info:
 > - https://github.com/mochajs/mocha/wiki/Using-mocha-programmatically
+
+### TODO
+
+- tests with 'use babel' wrong locate test
