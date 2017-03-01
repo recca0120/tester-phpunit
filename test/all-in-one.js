@@ -1,5 +1,3 @@
-'use babel';
-
 const assert = require('assert');
 
 const global_variable = 'i am global';
