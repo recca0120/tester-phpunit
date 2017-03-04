@@ -19,6 +19,12 @@
       "items": {
         "type": "string"
       }
+    },
+    "binaryPath": {
+      "title": "Path to the global mocha binary",
+      "description": "Optionally specify the path to the global mocha binary",
+      "type": "string",
+      "default": ""
     }
   },
   "dependencies": {
