@@ -19,4 +19,5 @@ $ apm install tester-mocha
 
 ### TODO
 
+- mocha ops support
 - tests with 'use babel' wrong locate test
