@@ -3,7 +3,7 @@
   "main": "./lib/tester-mocha",
   "author": "yacut",
   "readme": "./README.md",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A short description of your package",
   "keywords": [
     "test",
