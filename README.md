@@ -1,12 +1,21 @@
-# tester-mocha package
+# Tester Mocha
 
-Thae package is in development
+<!-- [![Build Status](https://img.shields.io/circleci/project/yacut/tester.svg?style=flat-square)](https://circleci.com/gh/yacut/tester) -->
+[![Plugin installs!](https://img.shields.io/apm/dm/tester-mocha.svg?style=flat-square)](https://atom.io/packages/tester-mocha)
+[![Package version!](https://img.shields.io/apm/v/tester-mocha.svg?style=flat-square)](https://atom.io/packages/tester-mocha)
+[![Dependencies!](https://img.shields.io/david/yacut/tester-mocha.svg?style=flat-square)](https://david-dm.org/yacut/tester-mocha)
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+Tester Mocha is a tester provider for the [Atom Tester](https://atom.io/packages/tester).
 
+![Preview](https://raw.githubusercontent.com/yacut/tester-mocha/master/preview.gif)
 
-> Info:
-> - https://github.com/mochajs/mocha/wiki/Using-mocha-programmatically
+#### How to / Installation
+
+You can install through the CLI by doing:
+
+```
+$ apm install tester-mocha
+```
 
 ### TODO
 

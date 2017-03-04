@@ -1,13 +1,28 @@
 {
   "name": "tester-mocha",
   "main": "./lib/tester-mocha",
+  "author": "yacut",
+  "readme": "./README.md",
   "version": "0.1.0",
   "description": "A short description of your package",
-  "keywords": [],
+  "keywords": [
+    "test",
+    "tester",
+    "testing",
+    "interactive",
+    "mocha",
+    "wallaby.js"
+  ],
   "repository": "https://github.com/yacut/tester-mocha",
+  "bugs": {
+    "url": "https://github.com/yacut/tester-mocha/issues"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "scripts": {
+    "test": "(apm test) && (flow check) && (eslint . )"
   },
   "configSchema": {
     "scopes": {
