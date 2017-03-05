@@ -28,7 +28,7 @@
       "title": "List of scopes to run Mocha on.",
       "type": "array",
       "default": [
-        "test/*.js"
+        "**/test/*.js"
       ],
       "items": {
         "type": "string"
