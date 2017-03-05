@@ -2,7 +2,6 @@
   "name": "tester-mocha",
   "main": "./lib/tester-mocha",
   "author": "yacut",
-  "readme": "./README.md",
   "version": "0.2.1",
   "description": "Mocha test runner provider for the interactive tester",
   "keywords": [
