@@ -5,7 +5,8 @@
     ],
     "globals": {
       "atom": "true",
-      "document": "true"
+      "document": "true",
+      "expect": "true"
     },
     "env": {
       "node": true,

@@ -1,10 +1,6 @@
 const assert = require('assert');
 
-const global_variable = 'i am global';
-
 describe('mocha runner', () => {
-  const describe_variable = 'i am in describe';
-
   before('Before all hook', (done) => {
     console.info('before all');
         // throw new Error('whatever');
@@ -82,7 +78,6 @@ describe('mocha runner', () => {
   });
 
   it('should compare true and false', () => {
-    const foo = 5;
     assert.equal(true, false);
   });
 

@@ -4,7 +4,7 @@
   "author": "yacut",
   "readme": "./README.md",
   "version": "0.2.0",
-  "description": "A short description of your package",
+  "description": "Mocha test runner provider for the interactive tester",
   "keywords": [
     "test",
     "tester",
@@ -62,6 +62,7 @@
     "babel-eslint": "^6.1.2",
     "eslint": "^3.16.1",
     "eslint-config-airbnb-base": "^11.1.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "jasmine-fix": "^1.0.1"
   }
 }
