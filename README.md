@@ -1,9 +1,11 @@
 # Tester Mocha
 
-<!-- [![Build Status](https://img.shields.io/circleci/project/yacut/tester.svg?style=flat-square)](https://circleci.com/gh/yacut/tester) -->
-[![Plugin installs!](https://img.shields.io/apm/dm/tester-mocha.svg?style=flat-square)](https://atom.io/packages/tester-mocha)
-[![Package version!](https://img.shields.io/apm/v/tester-mocha.svg?style=flat-square)](https://atom.io/packages/tester-mocha)
-[![Dependencies!](https://img.shields.io/david/yacut/tester-mocha.svg?style=flat-square)](https://david-dm.org/yacut/tester-mocha)
+![Build Status](https://travis-ci.org/yacut/tester-mocha.svg)
+[![APM Version](https://img.shields.io/apm/v/tester-mocha.svg)](https://atom.io/packages/tester-mocha)
+[![APM Downloads](https://img.shields.io/apm/dm/tester-mocha.svg)](https://atom.io/packages/tester-mocha)
+[![GitHub stars](https://img.shields.io/github/stars/yacut/tester-mocha.svg)](https://github.com/yacut/tester-mocha/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/yacut/tester-mocha.svg)](https://github.com/yacut/tester-mocha/issues)
+[![Dependencies!](https://img.shields.io/david/yacut/tester-mocha.svg)](https://david-dm.org/yacut/tester-mocha)
 
 Tester Mocha is a tester provider for the [Atom Tester](https://atom.io/packages/tester).
 
