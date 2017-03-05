@@ -39,6 +39,16 @@
       "description": "Optionally specify the path to the global mocha binary",
       "type": "string",
       "default": ""
+    },
+    "args": {
+      "title": "List of additional args to run Mocha.",
+      "type": "array",
+      "default": [
+        "--colors"
+      ],
+      "items": {
+        "type": "string"
+      }
     }
   },
   "dependencies": {
