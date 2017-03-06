@@ -6,3 +6,6 @@
 
 ## 0.2.1
 * add args to settings
+
+## 0.2.2
+* fix modified behavior 
