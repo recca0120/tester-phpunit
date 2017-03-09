@@ -9,11 +9,11 @@
 
 Tester PHPUnit is a tester provider for the [Atom Tester](https://atom.io/packages/tester).
 
+![Preview](https://raw.githubusercontent.com/recca0120/tester-phpunit/master/preview.gif)
+
 #### How to / Installation
 
 You can install through the CLI by doing:
-
-![Preview](https://raw.githubusercontent.com/recca0120/tester-phpunit/master/preview.gif)
 
 ```
 $ apm install tester-phpunit
