@@ -1,16 +1,16 @@
 'use babel';
 
 import assert from 'assert';
-import PHPUnitReporter from '../lib/phpunit-reporter';
+import JUnitParser from '../lib/junit-parser';
 
-describe('PHPUnitReporter', () => {
-  const phpunitReporter = new PHPUnitReporter();
-  const messages = phpunitReporter.parse(`${__dirname}/junit.xml`);
+describe('JUnitParser', () => {
+  const junitParser = new JUnitParser();
+  const messages = junitParser.parse(`${__dirname}/junit.xml`);
 
   describe('parse', () => {
     it('should have passed', () => {
       assert.deepEqual({
-        duration: '0.008168',
+        duration: '0.006241',
         filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
         lineNumber: 12,
         state: 'passed',
@@ -20,7 +20,7 @@ describe('PHPUnitReporter', () => {
 
     it('should have failed', () => {
       assert.deepEqual({
-        duration: '0.001182',
+        duration: '0.001918',
         filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
         lineNumber: 19,
         state: 'failed',
@@ -34,7 +34,7 @@ describe('PHPUnitReporter', () => {
 
     it('should have error', () => {
       assert.deepEqual({
-        duration: '0.000785',
+        duration: '0.001087',
         filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
         lineNumber: 24,
         state: 'failed',
@@ -44,6 +44,34 @@ describe('PHPUnitReporter', () => {
           name: 'PHPUnitTest::testError',
         },
       }, messages[2]);
+    });
+
+    it('should have skipped', () => {
+      assert.deepEqual({
+        duration: '0.001138',
+        filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
+        lineNumber: 29,
+        state: 'skipped',
+        title: 'testSkipped',
+        error: {
+          message: 'Skipped Test',
+          name: 'Skipped Test',
+        },
+      }, messages[3]);
+    });
+
+    it('should have incomplete', () => {
+      assert.deepEqual({
+        duration: '0.001081',
+        filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
+        lineNumber: 34,
+        state: 'failed',
+        title: 'testIncomplete',
+        error: {
+          message: 'Incomplete Test',
+          name: 'Incomplete Test',
+        },
+      }, messages[4]);
     });
   });
 });
