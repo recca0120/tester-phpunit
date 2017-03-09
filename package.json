@@ -15,9 +15,9 @@
     "phpunit",
     "wallaby.js"
   ],
-  "repository": "https://github.com/yacut/tester-phpunit",
+  "repository": "https://github.com/recca0120/tester-phpunit",
   "bugs": {
-    "url": "https://github.com/yacut/tester-phpunit/issues"
+    "url": "https://github.com/recca0120/tester-phpunit/issues"
   },
   "license": "MIT",
   "engines": {

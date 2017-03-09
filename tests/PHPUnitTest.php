@@ -12,17 +12,12 @@ class PHPUnitTest extends TestCase
 
     public function testPassed()
     {
-        $this->assertTrue(true);
+        $this->assertTrue(false);
     }
 
     public function testFailed()
     {
-        $this->assertTrue(false);
-    }
-
-    public function testError()
-    {
-        $this->assertInstanceOf(true, 'PDO');
+        $this->assertTrue(true);
     }
 
     public function testSkipped()
