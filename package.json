@@ -1,20 +1,23 @@
 {
-  "name": "tester-mocha",
-  "main": "./lib/tester-mocha",
-  "author": "yacut",
+  "name": "tester-phpunit",
+  "main": "./lib/tester-phpunit",
+  "author": [
+    "yacut",
+    "recca0120"
+  ],
   "version": "0.2.4",
-  "description": "Mocha test runner provider for the interactive tester",
+  "description": "PHPUnit test runner provider for the interactive tester",
   "keywords": [
     "test",
     "tester",
     "testing",
     "interactive",
-    "mocha",
+    "phpunit",
     "wallaby.js"
   ],
-  "repository": "https://github.com/yacut/tester-mocha",
+  "repository": "https://github.com/yacut/tester-phpunit",
   "bugs": {
-    "url": "https://github.com/yacut/tester-mocha/issues"
+    "url": "https://github.com/yacut/tester-phpunit/issues"
   },
   "license": "MIT",
   "engines": {
@@ -25,23 +28,23 @@
   },
   "configSchema": {
     "scopes": {
-      "title": "List of scopes to run Mocha on.",
+      "title": "List of scopes to run PHPUnit on.",
       "type": "array",
       "default": [
-        "**/test/*.js"
+        "**/tests/*Test.php"
       ],
       "items": {
         "type": "string"
       }
     },
     "binaryPath": {
-      "title": "Path to the global mocha binary",
-      "description": "Optionally specify the path to the global mocha binary",
+      "title": "Path to the global phpunit binary",
+      "description": "Optionally specify the path to the global phpunit binary",
       "type": "string",
       "default": ""
     },
     "args": {
-      "title": "List of additional args to run Mocha.",
+      "title": "List of additional args to run PHPUnit.",
       "type": "array",
       "default": [
         "--colors"
@@ -55,7 +58,7 @@
     "atom-package-deps": "^4.4.1",
     "error-stack-parser": "^2.0.0",
     "lodash": "^4.17.4",
-    "mocha": "^3.2.0"
+    "xml2js": "^0.4.17"
   },
   "package-deps": [
     "tester"

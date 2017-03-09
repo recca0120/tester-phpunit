@@ -1,25 +1,25 @@
-# Tester Mocha
+# Tester PHPUnit
 
-![Build Status](https://travis-ci.org/yacut/tester-mocha.svg)
-[![APM Version](https://img.shields.io/apm/v/tester-mocha.svg)](https://atom.io/packages/tester-mocha)
-[![APM Downloads](https://img.shields.io/apm/dm/tester-mocha.svg)](https://atom.io/packages/tester-mocha)
-[![GitHub stars](https://img.shields.io/github/stars/yacut/tester-mocha.svg)](https://github.com/yacut/tester-mocha/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/yacut/tester-mocha.svg)](https://github.com/yacut/tester-mocha/issues)
-[![Dependencies!](https://img.shields.io/david/yacut/tester-mocha.svg)](https://david-dm.org/yacut/tester-mocha)
+![Build Status](https://travis-ci.org/yacut/tester-phpunit.svg)
+[![APM Version](https://img.shields.io/apm/v/tester-phpunit.svg)](https://atom.io/packages/tester-phpunit)
+[![APM Downloads](https://img.shields.io/apm/dm/tester-phpunit.svg)](https://atom.io/packages/tester-phpunit)
+[![GitHub stars](https://img.shields.io/github/stars/yacut/tester-phpunit.svg)](https://github.com/yacut/tester-phpunit/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/yacut/tester-phpunit.svg)](https://github.com/yacut/tester-phpunit/issues)
+[![Dependencies!](https://img.shields.io/david/yacut/tester-phpunit.svg)](https://david-dm.org/yacut/tester-phpunit)
 
-Tester Mocha is a tester provider for the [Atom Tester](https://atom.io/packages/tester).
+Tester PHPUnit is a tester provider for the [Atom Tester](https://atom.io/packages/tester).
 
-![Preview](https://raw.githubusercontent.com/yacut/tester-mocha/master/preview.gif)
+![Preview](https://raw.githubusercontent.com/yacut/tester-phpunit/master/preview.gif)
 
 #### How to / Installation
 
 You can install through the CLI by doing:
 
 ```
-$ apm install tester-mocha
+$ apm install tester-phpunit
 ```
 
 ### TODO
 
-- mocha ops support
+- phpunit ops support
 - tests with 'use babel' wrong locate test
