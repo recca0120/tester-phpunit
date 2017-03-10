@@ -1,11 +1,10 @@
 'use babel';
 
 import assert from 'assert';
-import JUnitParser from '../lib/junit-parser';
+import parser from '../lib/junit-parser';
 
 describe('JUnitParser', () => {
-  const junitParser = new JUnitParser();
-  const messages = junitParser.parse(`${__dirname}/junit.xml`);
+  const messages = parser(`${__dirname}/junit.xml`);
 
   describe('parse', () => {
     it('should have passed', () => {
@@ -15,6 +14,7 @@ describe('JUnitParser', () => {
         lineNumber: 12,
         state: 'passed',
         title: 'testPassed',
+        error: {},
       }, messages[0]);
     });
 
