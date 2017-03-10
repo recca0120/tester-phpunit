@@ -27,4 +27,31 @@ C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php:35
 </error>
     </testcase>
   </testsuite>
+  <testsuite name="PHPUnitTest" file="C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php" tests="5" assertions="2" failures="1" errors="3" time="0.011465">
+    <testcase name="testPassed" class="PHPUnitTest" file="C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php" line="13" assertions="1" time="0.006241"/>
+    <testcase name="testFailed" class="PHPUnitTest" file="C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php" line="18" assertions="1" time="0.001918">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">PHPUnitTest::testFailed&#13;
+Failed asserting that false is true.
+&#13;
+C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php:20
+</failure>
+    </testcase>
+    <testcase name="testError" class="PHPUnitTest" file="C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php" line="23" assertions="0" time="0.001087">
+      <error type="PHPUnit_Framework_Exception">PHPUnitTest::testError&#13;
+PHPUnit_Framework_Exception: Argument #1 (No Value) of PHPUnit_Framework_Assert::assertInstanceOf() must be a class or interface name
+&#13;
+C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php:25
+</error>
+    </testcase>
+    <testcase name="testSkipped" class="PHPUnitTest" file="C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php" line="28" assertions="0" time="0.001138">
+      <error type="PHPUnit_Framework_SkippedTestError">Skipped Test
+C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php:30
+</error>
+    </testcase>
+    <testcase name="testIncomplete" class="PHPUnitTest" file="C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php" line="33" assertions="0" time="0.001081">
+      <error type="PHPUnit_Framework_IncompleteTestError">Incomplete Test
+C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php:35
+</error>
+    </testcase>
+  </testsuite>
 </testsuites>
