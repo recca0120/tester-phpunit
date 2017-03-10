@@ -18,3 +18,7 @@ You can install through the CLI by doing:
 ```
 $ apm install tester-phpunit
 ```
+
+## Thanks
+
+- [yacut](https://github.com/yacut/tester)
