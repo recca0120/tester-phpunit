@@ -37,5 +37,21 @@ C:\Users\recca\github\tester-phpunit\src\Receiver.php:68
 C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php:45
 </error>
     </testcase>
+    <testcase name="testCleanDirectory" class="Recca0120\Upload\Tests\PHPUnitTest" file="C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php" line="78" assertions="0" time="0.008761">
+      <error type="Mockery\Exception\InvalidCountException">Recca0120\Upload\Tests\PHPUnitTest::testCleanDirectory&#13;
+Mockery\Exception\InvalidCountException: Method delete("C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php") from Mockery_1_Recca0120_Upload_Filesystem should be called&#13;
+ exactly 1 times but called 0 times.
+&#13;
+C:\Users\recca\UniServerZ\www\driways\laravel\vendor\mockery\mockery\library\Mockery\CountValidator\Exact.php:37
+C:\Users\recca\UniServerZ\www\driways\laravel\vendor\mockery\mockery\library\Mockery\Expectation.php:298
+C:\Users\recca\UniServerZ\www\driways\laravel\vendor\mockery\mockery\library\Mockery\ExpectationDirector.php:120
+C:\Users\recca\UniServerZ\www\driways\laravel\vendor\mockery\mockery\library\Mockery\Container.php:297
+C:\Users\recca\UniServerZ\www\driways\laravel\vendor\mockery\mockery\library\Mockery\Container.php:282
+C:\Users\recca\UniServerZ\www\driways\laravel\vendor\mockery\mockery\library\Mockery.php:152
+C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php:13
+C:\ProgramData\ComposerSetup\vendor\phpunit\phpunit\src\TextUI\Command.php:188
+C:\ProgramData\ComposerSetup\vendor\phpunit\phpunit\src\TextUI\Command.php:118
+</error>
+    </testcase>
   </testsuite>
 </testsuites>

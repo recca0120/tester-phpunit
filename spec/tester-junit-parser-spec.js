@@ -25,7 +25,7 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testFailed',
       error: {
-        message: 'Failed asserting that false is true.',
+        message: 'PHPUnitTest::testFailed\nFailed asserting that false is true.\n\n\n',
         name: 'PHPUnit_Framework_ExpectationFailedException',
       },
     }, messages[1]);
@@ -39,7 +39,7 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testError',
       error: {
-        message: 'PHPUnit_Framework_Exception: Argument #1 (No Value) of PHPUnit_Framework_Assert::assertInstanceOf() must be a class or interface name',
+        message: 'PHPUnitTest::testError\nPHPUnit_Framework_Exception: Argument #1 (No Value) of PHPUnit_Framework_Assert::assertInstanceOf() must be a class or interface name\n\n\n',
         name: 'PHPUnit_Framework_Exception',
       },
     }, messages[2]);
@@ -53,7 +53,7 @@ describe('junit parser test', () => {
       state: 'skipped',
       title: 'testSkipped',
       error: {
-        message: 'Skipped Test',
+        message: 'Skipped Test\n\n',
         name: 'PHPUnit_Framework_SkippedTestError',
       },
     }, messages[3]);
@@ -67,13 +67,13 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testIncomplete',
       error: {
-        message: 'Incomplete Test',
+        message: 'Incomplete Test\n\n',
         name: 'PHPUnit_Framework_IncompleteTestError',
       },
     }, messages[4]);
   });
 
-  it('it should parse  exception', () => {
+  it('it should parse exception', () => {
     assert.deepEqual({
       duration: '0.164687',
       filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
@@ -85,5 +85,19 @@ describe('junit parser test', () => {
         name: 'BadMethodCallException',
       },
     }, messages[5]);
+  });
+
+  it('it should get current error message when mockery call not correct.', () => {
+    assert.deepEqual({
+      duration: '0.008761',
+      filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
+      lineNumber: 13,
+      state: 'failed',
+      title: 'testCleanDirectory',
+      error: {
+        message: 'Recca0120\\Upload\\Tests\\PHPUnitTest::testCleanDirectory\nMethod delete("C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php") from Mockery_1_Recca0120_Upload_Filesystem should be called&#13; exactly 1 times but called 0 times.',
+        name: 'Mockery\\Exception\\InvalidCountException',
+      },
+    }, messages[6]);
   });
 });
