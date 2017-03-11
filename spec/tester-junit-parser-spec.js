@@ -25,7 +25,7 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testFailed',
       error: {
-        message: 'PHPUnitTest::testFailed\nFailed asserting that false is true.\n\n\n',
+        message: 'PHPUnitTest::testFailed\nFailed asserting that false is true.',
         name: 'PHPUnit_Framework_ExpectationFailedException',
       },
     }, messages[1]);
@@ -39,7 +39,7 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testError',
       error: {
-        message: 'PHPUnitTest::testError\nPHPUnit_Framework_Exception: Argument #1 (No Value) of PHPUnit_Framework_Assert::assertInstanceOf() must be a class or interface name\n\n\n',
+        message: 'PHPUnitTest::testError\nPHPUnit_Framework_Exception: Argument #1 (No Value) of PHPUnit_Framework_Assert::assertInstanceOf() must be a class or interface name',
         name: 'PHPUnit_Framework_Exception',
       },
     }, messages[2]);
@@ -53,7 +53,7 @@ describe('junit parser test', () => {
       state: 'skipped',
       title: 'testSkipped',
       error: {
-        message: 'Skipped Test\n\n',
+        message: 'Skipped Test',
         name: 'PHPUnit_Framework_SkippedTestError',
       },
     }, messages[3]);
@@ -67,7 +67,7 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testIncomplete',
       error: {
-        message: 'Incomplete Test\n\n',
+        message: 'Incomplete Test',
         name: 'PHPUnit_Framework_IncompleteTestError',
       },
     }, messages[4]);
@@ -81,7 +81,7 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testReceive',
       error: {
-        message: 'BadMethodCallException: Method Mockery_1_Symfony_Component_HttpFoundation_File_UploadedFile::getClientOriginalName() does not exist on this mock object',
+        message: 'PHPUnitTest::testReceive\nBadMethodCallException: Method Mockery_1_Symfony_Component_HttpFoundation_File_UploadedFile::getClientOriginalName() does not exist on this mock object',
         name: 'BadMethodCallException',
       },
     }, messages[5]);
@@ -91,11 +91,11 @@ describe('junit parser test', () => {
     assert.deepEqual({
       duration: '0.008761',
       filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
-      lineNumber: 13,
+      lineNumber: 12,
       state: 'failed',
       title: 'testCleanDirectory',
       error: {
-        message: 'Recca0120\\Upload\\Tests\\PHPUnitTest::testCleanDirectory\nMethod delete("C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php") from Mockery_1_Recca0120_Upload_Filesystem should be called&#13; exactly 1 times but called 0 times.',
+        message: 'Recca0120\\Upload\\Tests\\PHPUnitTest::testCleanDirectory\nMockery\\Exception\\InvalidCountException: Method delete("C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php") from Mockery_1_Recca0120_Upload_Filesystem should be called\n exactly 1 times but called 0 times.',
         name: 'Mockery\\Exception\\InvalidCountException',
       },
     }, messages[6]);
