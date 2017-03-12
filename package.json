@@ -37,7 +37,13 @@
         "type": "string"
       }
     },
-    "binaryPath": {
+    "phpBinaryPath": {
+      "title": "Path to the global php binary",
+      "description": "Optionally specify the path to the global php binary",
+      "type": "string",
+      "default": ""
+    },
+    "phpunitBinaryPath": {
       "title": "Path to the global phpunit binary",
       "description": "Optionally specify the path to the global phpunit binary",
       "type": "string",
