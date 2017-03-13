@@ -5,7 +5,7 @@
     "yacut",
     "recca0120"
   ],
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "PHPUnit test runner provider for the interactive tester",
   "keywords": [
     "test",
