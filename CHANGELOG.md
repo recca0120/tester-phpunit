@@ -2,6 +2,9 @@
 
 All notable changes to `tester-phpunit` will be documented in this file
 
+## 0.1.8
+- 修正 phpunit 路徑錯誤
+
 ## 0.1.7
 - stop function
 
