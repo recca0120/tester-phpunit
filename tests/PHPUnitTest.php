@@ -10,7 +10,7 @@ class PHPUnitTest extends TestCase
         m::close();
     }
 
-    public function testPassed() 
+    public function testPassed()
     {
         $this->assertTrue(true);
     }

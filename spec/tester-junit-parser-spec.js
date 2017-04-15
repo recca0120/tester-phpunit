@@ -3,7 +3,6 @@
 import assert from 'assert';
 import parser from '../lib/junit-parser';
 
-/* @flow */
 describe('junit parser test', () => {
   const messages = parser(`${__dirname}/fixtures/junit.xml`);
 
@@ -39,7 +38,7 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testError',
       error: {
-        message: 'PHPUnitTest::testError\nPHPUnit_Framework_Exception: Argument #1 (No Value) of PHPUnit_Framework_Assert::assertInstanceOf() must be a class or interface name',
+        message: 'Argument #1 (No Value) of PHPUnit_Framework_Assert::assertInstanceOf() must be a class or interface name',
         name: 'PHPUnit_Framework_Exception',
       },
     }, messages[2]);
@@ -81,7 +80,7 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testReceive',
       error: {
-        message: 'PHPUnitTest::testReceive\nBadMethodCallException: Method Mockery_1_Symfony_Component_HttpFoundation_File_UploadedFile::getClientOriginalName() does not exist on this mock object',
+        message: 'Method Mockery_1_Symfony_Component_HttpFoundation_File_UploadedFile::getClientOriginalName() does not exist on this mock object',
         name: 'BadMethodCallException',
       },
     }, messages[5]);
@@ -95,7 +94,7 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testCleanDirectory',
       error: {
-        message: 'Recca0120\\Upload\\Tests\\PHPUnitTest::testCleanDirectory\nMockery\\Exception\\InvalidCountException: Method delete("C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php") from Mockery_1_Recca0120_Upload_Filesystem should be called\n exactly 1 times but called 0 times.',
+        message: 'Method delete("C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php") from Mockery_1_Recca0120_Upload_Filesystem should be called\n exactly 1 times but called 0 times.',
         name: 'Mockery\\Exception\\InvalidCountException',
       },
     }, messages[6]);

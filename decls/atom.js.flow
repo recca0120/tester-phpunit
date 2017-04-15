@@ -1,7 +1,6 @@
 /* @flow */
 
 // Global Atom Object
-/* flow-include
 declare var atom: Object;
 
 declare module 'atom' {
@@ -18,4 +17,3 @@ declare module 'atom' {
   declare var Disposable: any;
   declare var CompositeDisposable: any;
 }
-*/
