@@ -99,7 +99,8 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testCleanDirectory',
       error: {
-        message: 'Method delete("C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php") from Mockery_1_Recca0120_Upload_Filesystem should be called\n exactly 1 times but called 0 times.',
+        message: 'Method delete("C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php") ' +
+          'from Mockery_1_Recca0120_Upload_Filesystem should be called\n exactly 1 times but called 0 times.',
         name: '',
         // name: 'Mockery\\Exception\\InvalidCountException',
       },
