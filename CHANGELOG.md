@@ -2,6 +2,11 @@
 
 All notable changes to `tester-phpunit` will be documented in this file
 
+## 0.2.0
+- 修正 bug
+- system temp dir
+- phpunit 訊邊修正
+
 ## 0.1.8
 - 修正 phpunit 路徑錯誤
 

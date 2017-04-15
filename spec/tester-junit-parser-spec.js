@@ -24,8 +24,9 @@ describe('junit parser test', () => {
       state: 'failed',
       title: 'testFailed',
       error: {
-        message: 'PHPUnitTest::testFailed\nFailed asserting that false is true.',
-        name: 'PHPUnit_Framework_ExpectationFailedException',
+        message: 'Failed asserting that false is true.',
+        name: '',
+        // name: 'PHPUnit_Framework_ExpectationFailedException',
       },
     }, messages[1]);
   });
@@ -39,7 +40,8 @@ describe('junit parser test', () => {
       title: 'testError',
       error: {
         message: 'Argument #1 (No Value) of PHPUnit_Framework_Assert::assertInstanceOf() must be a class or interface name',
-        name: 'PHPUnit_Framework_Exception',
+        name: '',
+        // name: 'PHPUnit_Framework_Exception',
       },
     }, messages[2]);
   });
@@ -53,7 +55,8 @@ describe('junit parser test', () => {
       title: 'testSkipped',
       error: {
         message: 'Skipped Test',
-        name: 'PHPUnit_Framework_SkippedTestError',
+        name: '',
+        // name: 'PHPUnit_Framework_SkippedTestError',
       },
     }, messages[3]);
   });
@@ -67,7 +70,8 @@ describe('junit parser test', () => {
       title: 'testIncomplete',
       error: {
         message: 'Incomplete Test',
-        name: 'PHPUnit_Framework_IncompleteTestError',
+        name: '',
+        // name: 'PHPUnit_Framework_IncompleteTestError',
       },
     }, messages[4]);
   });
@@ -81,7 +85,8 @@ describe('junit parser test', () => {
       title: 'testReceive',
       error: {
         message: 'Method Mockery_1_Symfony_Component_HttpFoundation_File_UploadedFile::getClientOriginalName() does not exist on this mock object',
-        name: 'BadMethodCallException',
+        name: '',
+        // name: 'BadMethodCallException',
       },
     }, messages[5]);
   });
@@ -95,7 +100,8 @@ describe('junit parser test', () => {
       title: 'testCleanDirectory',
       error: {
         message: 'Method delete("C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php") from Mockery_1_Recca0120_Upload_Filesystem should be called\n exactly 1 times but called 0 times.',
-        name: 'Mockery\\Exception\\InvalidCountException',
+        name: '',
+        // name: 'Mockery\\Exception\\InvalidCountException',
       },
     }, messages[6]);
   });
