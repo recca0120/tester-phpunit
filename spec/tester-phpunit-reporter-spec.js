@@ -1,24 +1,31 @@
 'use babel';
 
 import { readFileSync } from 'fs';
-import assert from 'assert';
 import { JunitParser } from '../lib/phpunitReporter';
 
-describe('junit parser test', async () => {
+const getMessages = async () => {
   const messages = await JunitParser(readFileSync(`${__dirname}/fixtures/junit.xml`));
 
-  it('it should parse passed', () => {
-    assert.deepEqual({
+  return messages;
+};
+
+describe('junit parser test', () => {
+  it('it should parse passed', async () => {
+    const messages = await getMessages();
+
+    expect(messages[0]).toEqual({
       duration: 0.006241,
       filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
       lineNumber: 12,
       state: 'passed',
       title: 'testPassed',
-    }, messages[0]);
+    });
   });
 
-  it('it should parse failed', () => {
-    assert.deepEqual({
+  it('it should parse failed', async () => {
+    const messages = await getMessages();
+
+    expect(messages[1]).toEqual({
       duration: 0.001918,
       error: {
         message: 'asserting that false is true.',
@@ -29,11 +36,13 @@ describe('junit parser test', async () => {
       lineNumber: 19,
       state: 'failed',
       title: 'testFailed',
-    }, messages[1]);
+    });
   });
 
-  it('it should parse error', () => {
-    assert.deepEqual({
+  it('it should parse error', async () => {
+    const messages = await getMessages();
+
+    expect(messages[2]).toEqual({
       duration: 0.001087,
       error: {
         message: 'Argument #1 (No Value) of PHPUnit_Framework_Assert::assertInstanceOf() must be a class or interface name',
@@ -44,11 +53,13 @@ describe('junit parser test', async () => {
       lineNumber: 24,
       state: 'failed',
       title: 'testError',
-    }, messages[2]);
+    });
   });
 
-  it('it should parse skipped', () => {
-    assert.deepEqual({
+  it('it should parse skipped', async () => {
+    const messages = await getMessages();
+
+    expect(messages[3]).toEqual({
       duration: 0.001138,
       error: {
         message: 'Skipped Test',
@@ -59,11 +70,13 @@ describe('junit parser test', async () => {
       lineNumber: 29,
       state: 'skipped',
       title: 'testSkipped',
-    }, messages[3]);
+    });
   });
 
-  it('it should parse incomplete', () => {
-    assert.deepEqual({
+  it('it should parse incomplete', async () => {
+    const messages = await getMessages();
+
+    expect(messages[4]).toEqual({
       duration: 0.001081,
       error: {
         message: 'Incomplete Test',
@@ -74,11 +87,13 @@ describe('junit parser test', async () => {
       lineNumber: 34,
       state: 'failed',
       title: 'testIncomplete',
-    }, messages[4]);
+    });
   });
 
-  it('it should parse exception', () => {
-    assert.deepEqual({
+  it('it should parse exception', async () => {
+    const messages = await getMessages();
+
+    expect(messages[5]).toEqual({
       duration: 0.164687,
       error: {
         message: 'Method Mockery_1_Symfony_Component_HttpFoundation_File_UploadedFile::getClientOriginalName() does not exist on this mock object',
@@ -89,11 +104,13 @@ describe('junit parser test', async () => {
       lineNumber: 44,
       state: 'failed',
       title: 'testReceive',
-    }, messages[5]);
+    });
   });
 
-  it('it should get current error message when mockery call not correct.', () => {
-    assert.deepEqual({
+  it('it should get current error message when mockery call not correct.', async () => {
+    const messages = await getMessages();
+
+    expect(messages[6]).toEqual({
       duration: 0.008761,
       error: {
         message: 'Method delete("C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php") ' +
@@ -105,6 +122,6 @@ describe('junit parser test', async () => {
       lineNumber: 12,
       state: 'failed',
       title: 'testCleanDirectory',
-    }, messages[6]);
+    });
   });
 });
