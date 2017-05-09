@@ -2,10 +2,19 @@
 
 All notable changes to `tester-phpunit` will be documented in this file
 
+## 1.0.1
+- 增加測試案例
+- 修正 phpunit 路徑錯誤
+- 增加 Test, Tests 目錄 至 phpunit.xml
+
+## 1.0.0
+- 支援 tester 1.0.0
+- 當找不到 phpunit.xml 或 phpunit.xml.dist 則自動建立
+
 ## 0.2.0
 - 修正 bug
 - system temp dir
-- phpunit 訊邊修正
+- phpunit 路徑修正
 
 ## 0.1.8
 - 修正 phpunit 路徑錯誤
