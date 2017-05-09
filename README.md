@@ -1,6 +1,6 @@
 # Tester PHPUnit
 
-![Build Status](https://travis-ci.org/recca0120/tester-phpunit.svg)
+[![Build Status](https://travis-ci.org/recca0120/tester-phpunit.svg)](https://travis-ci.org/recca0120/tester-phpunit)
 [![APM Version](https://img.shields.io/apm/v/tester-phpunit.svg)](https://atom.io/packages/tester-phpunit)
 [![APM Downloads](https://img.shields.io/apm/dm/tester-phpunit.svg)](https://atom.io/packages/tester-phpunit)
 [![GitHub stars](https://img.shields.io/github/stars/recca0120/tester-phpunit.svg)](https://github.com/recca0120/tester-phpunit/stargazers)
