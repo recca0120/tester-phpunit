@@ -2,6 +2,13 @@
 
 All notable changes to `tester-phpunit` will be documented in this file
 
+## 1.0.3
+- JUnit 未建立時，產生 JUnit
+
+## 1.0.2
+- 優先使用 phpunit.xml
+- 當 JUnit 未建立時，顯示skipped
+
 ## 1.0.1
 - 增加測試案例
 - 修正 phpunit 路徑錯誤
@@ -26,7 +33,7 @@ All notable changes to `tester-phpunit` will be documented in this file
 - 找出 phpunit 路徑
 
 ## 0.1.5
-- 修正分析 junit 分析錯誤
+- 修正分析 JUnit 分析錯誤
 
 ## 0.1.2
 - 分析五種狀態 passed, failed, error, skipped, incomplete
