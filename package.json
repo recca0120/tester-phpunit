@@ -52,9 +52,7 @@
     "args": {
       "title": "List of additional args to run PHPUnit. Forbidden: --log-junit",
       "type": "array",
-      "default": [
-        "--colors"
-      ],
+      "default": [],
       "items": {
         "type": "string"
       }
