@@ -62,7 +62,6 @@
   },
   "dependencies": {
     "atom-package-deps": "4.6.0",
-    "lodash": "^4.17.4",
     "xml2js": "^0.4.17"
   },
   "package-deps": [
