@@ -1,10 +1,11 @@
 'use babel';
 
+import { readFileSync } from 'fs';
 import assert from 'assert';
 import phpunitReporter from '../lib/phpunitReporter';
 
 describe('junit parser test', () => {
-  const messages = phpunitReporter(`${__dirname}/fixtures/junit.xml`);
+  const messages = phpunitReporter(readFileSync(`${__dirname}/fixtures/junit.xml`));
 
   it('it should parse passed', () => {
     assert.deepEqual({
