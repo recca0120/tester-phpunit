@@ -2,7 +2,7 @@
 
 /* @flow */
 
-import { readFileSync, writeFileSync, unlink } from 'fs';
+import { mkdirSync, rmdirSync, readFileSync, writeFileSync, unlinkSync } from 'fs';
 import {
   getCommand,
   getConfigurationFile,
@@ -30,8 +30,16 @@ describe('spawn-runner', () => {
     });
 
     it('should return vendor phpunit', () => {
+      mkdirSync(`${fixturesPath}/vendor`);
+      mkdirSync(`${fixturesPath}/vendor/phpunit`);
+      mkdirSync(`${fixturesPath}/vendor/phpunit/phpunit`);
+      writeFileSync(`${fixturesPath}/vendor/phpunit/phpunit/phpunit`, 'phpunit');
       expect(getCommand(fixturesPath, '', '')).toEqual(['php', `${fixturesPath}/vendor/phpunit/phpunit/phpunit`]);
       expect(getCommand(fixturesPath, '/usr/bin/php', '')).toEqual(['/usr/bin/php', `${fixturesPath}/vendor/phpunit/phpunit/phpunit`]);
+      unlinkSync(`${fixturesPath}/vendor/phpunit/phpunit/phpunit`);
+      rmdirSync(`${fixturesPath}/vendor/phpunit/phpunit`);
+      rmdirSync(`${fixturesPath}/vendor/phpunit`);
+      rmdirSync(`${fixturesPath}/vendor`);
     });
   });
 
@@ -41,15 +49,15 @@ describe('spawn-runner', () => {
       writeFileSync(xmlFile, '');
       writeFileSync(`${fixturesPath}/phpunit.xml`, '');
       expect(getConfigurationFile(fixturesPath, '')).toEqual(xmlFile);
-      unlink(xmlFile);
-      unlink(`${fixturesPath}/phpunit.xml`);
+      unlinkSync(xmlFile);
+      unlinkSync(`${fixturesPath}/phpunit.xml`);
     });
 
     it('should return phpunit.xml', () => {
       const xmlFile = `${fixturesPath}/phpunit.xml`;
       writeFileSync(xmlFile, '');
       expect(getConfigurationFile(fixturesPath, '')).toEqual(xmlFile);
-      unlink(xmlFile);
+      unlinkSync(xmlFile);
     });
 
     it('should return custom.xml', () => {
@@ -75,7 +83,7 @@ describe('spawn-runner', () => {
     </testsuites>
 </phpunit>`);
 
-      unlink(xmlFile);
+      unlinkSync(xmlFile);
     });
   });
 });
