@@ -47,17 +47,17 @@ describe('spawn-runner', () => {
     it('should return phpunit.xml.dist', () => {
       const xmlFile = `${fixturesPath}/phpunit.xml.dist`;
       writeFileSync(xmlFile, '');
-      writeFileSync(`${fixturesPath}/phpunit.xml`, '');
       expect(getConfigurationFile(fixturesPath, '')).toEqual(xmlFile);
       unlinkSync(xmlFile);
-      unlinkSync(`${fixturesPath}/phpunit.xml`);
     });
 
     it('should return phpunit.xml', () => {
       const xmlFile = `${fixturesPath}/phpunit.xml`;
       writeFileSync(xmlFile, '');
+      writeFileSync(`${fixturesPath}/phpunit.xml.dist`, '');
       expect(getConfigurationFile(fixturesPath, '')).toEqual(xmlFile);
       unlinkSync(xmlFile);
+      unlinkSync(`${fixturesPath}/phpunit.xml.dist`);
     });
 
     it('should return custom.xml', () => {
