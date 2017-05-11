@@ -73,14 +73,14 @@ describe('spawn-runner', () => {
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false">
-    <testsuites>
-        <testsuite name="Unit Tests">
-          <directory suffix="Test.php">${fixturesPath}/test</directory>
-          <directory suffix="Test.php">${fixturesPath}/tests</directory>
-          <directory suffix="Test.php">${fixturesPath}/Test</directory>
-          <directory suffix="Test.php">${fixturesPath}/Tests</directory>
-        </testsuite>
-    </testsuites>
+  <testsuites>
+    <testsuite name="Unit Tests">
+      <directory suffix="Test.php">${fixturesPath}/test</directory>
+      <directory suffix="Test.php">${fixturesPath}/tests</directory>
+      <directory suffix="Test.php">${fixturesPath}/Test</directory>
+      <directory suffix="Test.php">${fixturesPath}/Tests</directory>
+    </testsuite>
+  </testsuites>
 </phpunit>`);
 
       unlinkSync(xmlFile);
