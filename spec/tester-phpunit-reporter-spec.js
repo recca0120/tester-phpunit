@@ -28,7 +28,7 @@ describe('junit parser test', () => {
     expect(messages[1]).toEqual({
       duration: 0.001918,
       error: {
-        message: 'asserting that false is true.',
+        message: 'Failed asserting that false is true.',
         name: '',
         // name: 'PHPUnit_Framework_ExpectationFailedException',
       },
