@@ -27,6 +27,7 @@ describe('spawn-runner', () => {
     it('should return custom phpunit', () => {
       expect(getCommand(__dirname, '', '/path/to/phpunit')).toEqual(['php', '/path/to/phpunit']);
       expect(getCommand(__dirname, '/usr/bin/php', '/path/to/phpunit')).toEqual(['/usr/bin/php', '/path/to/phpunit']);
+      expect(getCommand(__dirname, '/usr/bin/php', '/path/to/phpunit.phar')).toEqual(['/usr/bin/php', '/path/to/phpunit.phar']);
     });
 
     it('should return vendor phpunit', () => {

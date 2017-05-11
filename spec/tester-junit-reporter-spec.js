@@ -1,17 +1,17 @@
 'use babel';
 
 import { readFileSync } from 'fs';
-import { JunitParser } from '../lib/phpunitReporter';
+import { junitParser } from '../lib/junit-parser';
 
-const getMessages = async () => {
-  const messages = await JunitParser(readFileSync(`${__dirname}/fixtures/junit.xml`));
+describe('junit-parser', () => {
+  const getMessages = () => {
+    const messages = junitParser(readFileSync(`${__dirname}/fixtures/junit.xml`).toString());
 
-  return messages;
-};
+    return messages;
+  };
 
-describe('junit parser test', () => {
-  it('it should parse passed', async () => {
-    const messages = await getMessages();
+  it('it should parse passed', () => {
+    const messages = getMessages();
 
     expect(messages[0]).toEqual({
       duration: 0.006241,
@@ -22,8 +22,8 @@ describe('junit parser test', () => {
     });
   });
 
-  it('it should parse failed', async () => {
-    const messages = await getMessages();
+  it('it should parse failed', () => {
+    const messages = getMessages();
 
     expect(messages[1]).toEqual({
       duration: 0.001918,
@@ -39,8 +39,8 @@ describe('junit parser test', () => {
     });
   });
 
-  it('it should parse error', async () => {
-    const messages = await getMessages();
+  it('it should parse error', () => {
+    const messages = getMessages();
 
     expect(messages[2]).toEqual({
       duration: 0.001087,
@@ -56,8 +56,8 @@ describe('junit parser test', () => {
     });
   });
 
-  it('it should parse skipped', async () => {
-    const messages = await getMessages();
+  it('it should parse skipped', () => {
+    const messages = getMessages();
 
     expect(messages[3]).toEqual({
       duration: 0.001138,
@@ -73,8 +73,8 @@ describe('junit parser test', () => {
     });
   });
 
-  it('it should parse incomplete', async () => {
-    const messages = await getMessages();
+  it('it should parse incomplete', () => {
+    const messages = getMessages();
 
     expect(messages[4]).toEqual({
       duration: 0.001081,
@@ -90,8 +90,8 @@ describe('junit parser test', () => {
     });
   });
 
-  it('it should parse exception', async () => {
-    const messages = await getMessages();
+  it('it should parse exception', () => {
+    const messages = getMessages();
 
     expect(messages[5]).toEqual({
       duration: 0.164687,
@@ -107,8 +107,8 @@ describe('junit parser test', () => {
     });
   });
 
-  it('it should get current error message when mockery call not correct.', async () => {
-    const messages = await getMessages();
+  it('it should get current error message when mockery call not correct.', () => {
+    const messages = getMessages();
 
     expect(messages[6]).toEqual({
       duration: 0.008761,
@@ -125,8 +125,8 @@ describe('junit parser test', () => {
     });
   });
 
-  it('it should be skipped when testcase has skipped tag', async () => {
-    const messages = await getMessages();
+  it('it should be skipped when testcase has skipped tag', () => {
+    const messages = getMessages();
 
     expect(messages[7]).toEqual({
       duration: 0.001352,

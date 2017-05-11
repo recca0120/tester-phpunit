@@ -1,0 +1,28 @@
+
+##teamcity[testCount count='4' flowId='14520']
+
+##teamcity[testSuiteStarted name='PHPUnit2Test' locationHint='php_qn://C:\Users\recca\github\tester-phpunit\tests\PHPUnit2Test.php::\PHPUnit2Test' flowId='14520']
+
+##teamcity[testStarted name='testPassed' locationHint='php_qn://C:\Users\recca\github\tester-phpunit\tests\PHPUnit2Test.php::\PHPUnit2Test::testPassed' flowId='14520']
+
+##teamcity[testFinished name='testPassed' duration='10' flowId='14520']
+
+##teamcity[testStarted name='testFailed' locationHint='php_qn://C:\Users\recca\github\tester-phpunit\tests\PHPUnit2Test.php::\PHPUnit2Test::testFailed' flowId='14520']
+
+##teamcity[testFailed name='testFailed' message='Failed asserting that false is true.' details=' C:\Users\recca\github\tester-phpunit\tests\PHPUnit2Test.php:20|n ' flowId='14520']
+
+##teamcity[testFinished name='testFailed' duration='0' flowId='14520']
+
+##teamcity[testStarted name='testSkipped' locationHint='php_qn://C:\Users\recca\github\tester-phpunit\tests\PHPUnit2Test.php::\PHPUnit2Test::testSkipped' flowId='14520']
+
+##teamcity[testIgnored name='testSkipped' message='The MySQLi extension is not available.' details=' C:\Users\recca\github\tester-phpunit\tests\PHPUnit2Test.php:25|n ' flowId='14520']
+
+##teamcity[testFinished name='testSkipped' duration='0' flowId='14520']
+
+##teamcity[testStarted name='testIncomplete' locationHint='php_qn://C:\Users\recca\github\tester-phpunit\tests\PHPUnit2Test.php::\PHPUnit2Test::testIncomplete' flowId='14520']
+
+##teamcity[testIgnored name='testIncomplete' message='This test has not been implemented yet.' details=' C:\Users\recca\github\tester-phpunit\tests\PHPUnit2Test.php:30|n ' flowId='14520']
+
+##teamcity[testFinished name='testIncomplete' duration='0' flowId='14520']
+
+##teamcity[testSuiteFinished name='PHPUnit2Test' flowId='14520']
