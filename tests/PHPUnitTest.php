@@ -3,7 +3,7 @@
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 
-abstract class PHPUnitTest extends TestCase
+class PHPUnitTest extends TestCase
 {
     protected function tearDown()
     {
