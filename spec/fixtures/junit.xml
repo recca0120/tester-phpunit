@@ -53,5 +53,11 @@ C:\ProgramData\ComposerSetup\vendor\phpunit\phpunit\src\TextUI\Command.php:188
 C:\ProgramData\ComposerSetup\vendor\phpunit\phpunit\src\TextUI\Command.php:118
 </error>
     </testcase>
+    <testcase name="testSkipped" class="PHPUnitTest" classname="PHPUnitTest" file="C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php" line="23" assertions="0" time="0.001352">
+      <skipped/>
+    </testcase>
+    <testcase name="testIncomplete" class="PHPUnitTest" classname="PHPUnitTest" file="C:\Users\recca\github\tester-phpunit\tests\PHPUnitTest.php" line="28" assertions="0" time="0.000954">
+      <skipped/>
+    </testcase>
   </testsuite>
 </testsuites>

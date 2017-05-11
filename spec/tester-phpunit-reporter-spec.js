@@ -124,4 +124,32 @@ describe('junit parser test', () => {
       title: 'testCleanDirectory',
     });
   });
+
+  it('it should be skipped when testcase has skipped tag', async () => {
+    const messages = await getMessages();
+
+    expect(messages[7]).toEqual({
+      duration: 0.001352,
+      error: {
+        message: '',
+        name: '',
+      },
+      filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
+      lineNumber: 22,
+      state: 'skipped',
+      title: 'testSkipped',
+    });
+
+    expect(messages[8]).toEqual({
+      duration: 0.000954,
+      error: {
+        message: '',
+        name: '',
+      },
+      filePath: 'C:\\Users\\recca\\github\\tester-phpunit\\tests\\PHPUnitTest.php',
+      lineNumber: 27,
+      state: 'skipped',
+      title: 'testIncomplete',
+    });
+  });
 });

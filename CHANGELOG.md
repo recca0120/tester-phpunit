@@ -2,6 +2,9 @@
 
 All notable changes to `tester-phpunit` will be documented in this file
 
+## 1.0.4
+- PHPUnit 6 正確顯示 skipped
+
 ## 1.0.3
 - JUnit 未建立時，產生 JUnit
 
