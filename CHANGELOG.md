@@ -2,6 +2,9 @@
 
 All notable changes to `tester-phpunit` will be documented in this file
 
+## 1.0.5
+- clean code
+
 ## 1.0.4
 - PHPUnit 6 正確顯示 skipped
 
