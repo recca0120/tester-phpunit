@@ -7,6 +7,7 @@ import {
   getCommand,
   getConfigurationFile,
   removeBadArgs,
+  phpParseError,
 } from '../lib/spawn-runner';
 
 const fixturesPath = `${__dirname}/fixtures`;
@@ -85,6 +86,11 @@ describe('spawn-runner', () => {
 </phpunit>`);
 
       unlinkSync(xmlFile);
+    });
+
+    it('php parse error', () => {
+      const parseError = phpParseError(readFileSync(`${__dirname}/fixtures/php-parse-error.txt`).toString());
+      expect(parseError).toContain('Parse error: syntax error, unexpected \'->\' (T_OBJECT_OPERATOR) in tests\\FluentTest.php on line 33\n');
     });
   });
 });

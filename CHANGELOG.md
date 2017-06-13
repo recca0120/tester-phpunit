@@ -2,6 +2,9 @@
 
 All notable changes to `tester-phpunit` will be documented in this file
 
+## 1.0.6
+- 顯示 php 錯誤
+
 ## 1.0.5
 - clean code
 

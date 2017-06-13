@@ -1,0 +1,5 @@
+[1mTester PHPUnit[0m
+[1mcommand:[0m php C:\Users\recca\UniServerZ\www\forest-beauty\laravel/vendor/phpunit/phpunit/phpunit --log-junit=C:\Users\recca\AppData\Local\Temp/junit-1497351084647.xml --configuration=C:\Users\recca\UniServerZ\www\forest-beauty\laravel/phpunit.xml --colors=always C:\Users\recca\UniServerZ\www\forest-beauty\laravel\tests\FluentTest.php
+[1mcwd:[0m C:\Users\recca\UniServerZ\www\forest-beauty\laravel
+
+Parse error: syntax error, unexpected '->' (T_OBJECT_OPERATOR) in tests\FluentTest.php on line 33
